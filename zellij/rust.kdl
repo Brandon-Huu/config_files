@@ -1,0 +1,18 @@
+layout {
+	pane size=1 borderless=true {
+        	plugin location="zellij:compact-bar"
+    	}    
+pane split_direction="vertical" {
+        pane
+        pane split_direction="horizontal" stacked=true {
+            cargo { args "check"; }
+            cargo { args "run"; }
+            cargo { args "test"; }
+        }
+    } 
+    pane_template name="cargo" {
+        command "cargo"
+        start_suspended true
+    }
+}
+
