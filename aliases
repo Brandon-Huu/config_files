@@ -1,0 +1,2 @@
+alias get='grep -Hrni'
+alias where='find | grep'
