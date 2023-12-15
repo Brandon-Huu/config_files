@@ -55,5 +55,5 @@ set history=1000
 syntax on
 Plugin 'wakatime/vim-wakatime'
 
-# Automatically compiles typst files and then opens them with evince
+" Automatically compiles typst files and then opens them with evince
 autocmd BufWritePost *.typ silent! !typst compile <afile> <afile>.pdf && evince <afile>.pdf &
