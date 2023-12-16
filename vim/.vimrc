@@ -38,8 +38,10 @@ vnoremap <Up> <Nop>
 set number
 set cursorline
 
+" 2 space tabing
+set shiftwidth=2 tabstop=2 softtabstop=2 smarttab 
 set expandtab
-set shiftwidth=2
+set autoindent smartindent
 
 set ignorecase
 set smartcase
