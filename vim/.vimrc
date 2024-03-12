@@ -51,6 +51,10 @@ set wildmode=list:longest
 set history=1000
 
 syntax on
+" Always show file path
+set laststatus=2
+" Show full file path
+set statusline+=%F
 
 " Automatically compiles typst files and then opens them with evince
 autocmd BufWritePost *.typ silent! !typst compile <afile> <afile>.pdf && evince <afile>.pdf &
